@@ -1,0 +1,22 @@
+{
+  "name": "penrose_local_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "node index.js",
+    "pkg": "pkg . -t  win -o app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.code.oa.com/jeffwu/penrose_local_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-server": "^0.11.1",
+    "pkg": "^4.4.0"
+  }
+}
