@@ -16,7 +16,7 @@ app.get('*', function (req, res) {
 
 // 监听
 app.listen(8081, function () {
-    console.log('Penrose 2D本地启动成功，项目运行在：' + 'http://localhost:8081')
+    console.log('Project Running At：' + 'http://localhost:8081')
 });
 
 var exec = require('child_process').exec;
