@@ -1,16 +1,18 @@
-var express = require('express')
-var fs = require('fs')
-var bodyParser = require('body-parser')
-var app = express()
+const express = require('express')
+const fs = require('fs')
+const path = require('path')
+const bodyParser = require('body-parser')
+let app = express()
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // 访问静态资源
-app.use(express.static('./dist'))
+app.use(express.static(path.join('./', 'dist')))
 
 // 访问单页
 app.get('*', function (req, res) {
-    var html = fs.readFileSync('./dist/index.html', 'utf-8')
+    var html = fs.readFileSync(path.join('./', 'dist', 'index.html'), 'utf-8')
     res.send(html)
 });
 
