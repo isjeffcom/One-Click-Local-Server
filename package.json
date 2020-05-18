@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git.code.oa.com/jeffwu/penrose_local_server.git"
+    "url": "https://github.com/isjeffcom/One-Click-Local-Server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "http-server": "^0.12.3",
-    "pkg": "^4.4.0"
+    "pkg": "^4.4.8"
   }
 }
